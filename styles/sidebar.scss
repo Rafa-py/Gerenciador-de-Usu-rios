@@ -1,0 +1,100 @@
+@import "base/variables.scss";
+
+.sidebar{
+    width: 270px;
+    height: 100vh;
+    background: $green-base;
+    position: absolute;
+    transform: translateX(-100%);
+    transition: .5s ease-in-out;
+    .box_user{
+        display: flex;
+        align-items: center;
+        width: 60%;
+        height: 100px;
+        justify-content: space-around;
+        margin-left: 20px;
+        img{
+            width: 48px;
+            height: 48px;
+        }
+        .box_user_content{
+            h3{
+                color: $green-clear;
+                font-size: 22px;
+            }
+            p{
+                color: $green-clear;
+                font-size: 16px;
+                position: relative;
+                margin-left: 12px;
+            }
+            p:before{
+                position: absolute;
+                content: "";
+                width: 10px;
+                height: 10px;
+                background: #7CEE7A;
+                border-radius: 25px;
+                bottom: 2.5px;
+                left: -13px;
+            }
+        }
+    }
+    .box_menu{
+        width: 235px;
+        height: 45px;
+        padding-left: 35px;
+        background: $green-dark;
+        display: flex;
+        align-items: center;
+        border-bottom: 1.5px solid $yellow-base;
+        h3{
+            color: $green-clear;
+            font-size: 22px;
+            font-weight: 600;
+        }
+    }
+    .box_menu_items{
+        width: 235px;
+        height: 45px;
+        padding-left: 35px;
+        background: $green-dark;
+        display: flex;
+        align-items: center;
+        border-bottom: 1.5px solid $yellow-base;
+        .side_img{
+            width: 22px;
+            height: 22px;
+        }
+        p{
+            color: $green-clear;
+            font-size: 16px;
+            font-weight: 400;
+            margin-left: 15px;
+        }
+    }
+    .box_menu_exit{
+        width: 235px;
+        height: 45px;
+        padding-left: 35px;
+        background: $green-dark;
+        display: flex;
+        align-items: center;
+        border-bottom: 1.5px solid $yellow-base;
+        .side_img{
+            width: 22px;
+            height: 22px;
+        }
+        p{
+            color: $yellow-base;
+            font-size: 16px;
+            font-weight: 400;
+            margin-left: 15px;
+        }
+    }
+}
+.sidebar.active{
+    transform: translateX(0);
+    transition: .5s ease-in-out;
+}

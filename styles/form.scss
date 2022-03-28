@@ -1,0 +1,181 @@
+.content{
+    .content_form{
+        margin-top: 10%;
+        margin-left: 2%;
+        .counter{
+            display: flex;
+            .user_counter{
+                width: 190px;
+                height: 130px;
+                background: #719E9A;
+                border-radius: 12px;
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                margin-right: 5px;
+                h1{
+                    color: $green-clear;
+                    font-size: 62px;
+                    text-align: center;
+                }
+                h3{
+                    color: $green-clear;
+                    font-size: 20px;
+                }
+            }
+            .admin_counter{
+                width: 190px;
+                height: 130px;
+                background: $yellow-base;
+                border-radius: 12px;
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                margin-left: 5px;
+                h1{
+                    color: $green-clear;
+                    font-size: 62px;
+                    text-align: center;
+                }
+                h3{
+                    color: $green-clear;
+                    font-size: 20px;
+                }
+            }
+        }
+        .form-create{
+            .form-body{
+                margin-top: 20px;
+                width: 400px;
+                height: 720px;
+                background: white;
+                border-radius: 12px;
+                .form-header{
+                    height: 40px;
+                    background: $green-dark;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 12px 12px 0 0;   
+                    h3{
+                        color:$green-clear;
+                        font-size: 24px;
+                        font-weight: 500;
+                        text-align: center;
+                    }
+                }
+                .form-header-update{
+                    height: 40px;
+                    background: #1D4463;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 12px 12px 0 0;   
+                    h3{
+                        color:$green-clear;
+                        font-size: 24px;
+                        font-weight: 500;
+                        text-align: center;
+                    }
+                }
+                .form-box{
+                    .name{
+                        width: 360px;
+                        height: 40px;
+                        border: 1px solid $green-base;
+                        border-radius: 8px;
+                        margin: 17px 0 20px 8px;
+                        font-size: 18px;
+                        padding-left: 20px;
+                    }
+                    .name::placeholder{
+                        color:$green-base;
+                    }
+                    .gender{
+                        font-size: 18px;
+                        padding-left: 20px;
+                        color: $green-base;
+                    }
+                    .radio{
+                        padding-left: 20px; 
+                        color: $green-base;
+                        margin-top: 5px;   
+                    }
+                    .country{
+                        padding-left: 20px; 
+                        font-size: 18px;
+                        color:$green-base;
+                    }
+                    .city{
+                        width: 382px;
+                    }
+                }
+                label{
+                    font-size: 18px;
+                    color:$green-base;
+                    padding: 20px;
+                }
+                .radio{
+                    margin: 15px 0 15px 0;
+                }
+                .btn{
+                    text-transform: uppercase;
+                    color: $green-clear;
+                    font-size: 16px;
+                    font-weight: 600;
+                    width: 90px;
+                    height: 30px;
+                    padding: 0 auto;
+                    background: $green-base;
+                    border: none;
+                    border-radius: 8px;
+                    cursor: pointer;
+                    margin-left: 15px;
+                }
+                .btn:active{
+                    width: 91px;
+                    height: 31px;
+                }
+                .btn-up{
+                    text-transform: uppercase;
+                    color: $green-clear;
+                    font-size: 16px;
+                    font-weight: 600;
+                    width: 90px;
+                    height: 30px;
+                    padding: 0 auto;
+                    background: #1D4463;
+                    border: none;
+                    border-radius: 8px;
+                    cursor: pointer;
+                    margin-left: 15px;
+                }
+                .btn-up:active{
+                    width: 91px;
+                    height: 31px;
+                }
+                .btn-cancel{
+                    text-transform: uppercase;
+                    color: $green-clear;
+                    font-size: 16px;
+                    font-weight: 600;
+                    width: 110px;
+                    height: 30px;
+                    padding: 0 auto;
+                    background: #696969;
+                    border: none;
+                    border-radius: 8px;
+                    cursor: pointer;
+                    margin-left: 15px;
+                }
+                .btn-cancel:active{
+                    width: 111px;
+                    height: 31px;
+                }
+            }
+        }
+    }
+}
+#form-update{
+    display: none;
+}

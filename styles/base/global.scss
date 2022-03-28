@@ -1,0 +1,17 @@
+@import "variables.scss"; 
+
+body{
+    font-family: $font-defaut;
+    scroll-behavior: smooth;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+.container{
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
